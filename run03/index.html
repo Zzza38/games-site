@@ -9,28 +9,26 @@
 
 <script>
     window.onload = function() {
-        // Open a new window with about:blank
-        var newWindow = window.open('about:blank', '_blank');
+        // Create an iframe element
+        var iframe = document.createElement('iframe');
 
-        // Wait for the new window to finish loading
-        newWindow.onload = function() {
-            // Create an iframe element
-            var iframe = document.createElement('iframe');
+        // Set the source URL of the embedded site
+        iframe.src = 'https://subtohumanhen-vytelite.koyeb.app/service/go/hvtrs8%2F-pna%7Bep01.aoo%2Fpul%2F1%2F%60eva-';
 
-            // Set the source URL of the embedded site
-            iframe.src = 'https://subtohumanhen-vytelite.koyeb.app/service/go/hvtrs8%2F-pna%7Bep01.aoo%2Fpul%2F1%2F%60eva-';
+        // Set the sandbox attribute to restrict certain behaviors
+        iframe.sandbox = 'allow-same-origin allow-scripts allow-popups allow-forms';
 
-    // Set the sandbox attribute to restrict certain behaviors
-    iframe.sandbox = 'allow-same-origin allow-scripts allow-popups allow-forms';
+        // Set the iframe's style to fill the entire window
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.border = 'none';
+        iframe.style.position = 'absolute';
+        iframe.style.top = '0';
+        iframe.style.left = '0';
+        iframe.style.zIndex = '9999';
 
-            // Set the iframe's style to fill the entire window
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.border = 'none';
-
-            // Append the iframe to the new window's document body
-            newWindow.document.body.appendChild(iframe);
-        };
+        // Append the iframe to the document body
+        document.body.appendChild(iframe);
     };
 </script>
 
