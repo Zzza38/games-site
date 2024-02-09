@@ -31,11 +31,13 @@
         label {
             color: white;
             margin-bottom: 5px;
+            
         }
 
         input[type="text"],
         input[type="password"] {
             padding: 5px;
+            border-radius: 5px;
             border: none;
         }
 
@@ -70,6 +72,8 @@
             { username: 'sammy', password: 'panther1234' },
             { username: 'lerone', password: 'b0ngu$verb' },
             { username: 'gio', password: '1234' },
+            { username: 'rebecca', password: '1234' },
+            
         ];
 
         document.getElementById("loginForm").addEventListener("submit", function(event) {
