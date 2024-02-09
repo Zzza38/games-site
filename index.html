@@ -7,9 +7,10 @@
     <style>
             h2 {
         color: white;
-        align-items: center;
     }
-
+        #headerLogin {
+            align-items: center;
+        }
     form {
         display: flex;
         flex-direction: column;
@@ -18,7 +19,7 @@
 
     label {
         color: white;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     input[type="text"],
@@ -43,7 +44,9 @@
 </style>
 </head
 <body >
+    <div id="headerLogin">
     <h2>Login</h2>
+    </div>
     <form id="loginForm">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
@@ -59,7 +62,7 @@
             { username: 'william', password: '11221122' },
             { username: 'james', password: 'james2012' },
             { username: 'sammy', password: 'panther1234' },
-          { username: 'lerone', password: '1234' },
+          { username: 'lerone', password: 'b0ngu$verb' },
           { username: 'gio', password: '1234' },
         ];
 
