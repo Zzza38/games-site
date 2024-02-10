@@ -31,6 +31,21 @@
     // Call the function to check if the user is logged in when the page loads
     checkLoggedIn();
 </script>
+<script>
+    // Function to check if the user is logged in
+    function checkLoggedIn() {
+        // Get the value of the loggedInRBLX cookie
+        var loggedInRBLX = document.cookie.replace(/(?:(?:^|.*;\s*)loggedInRBLX\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+
+        // If the loggedInRBLX cookie is not set to "true", redirect to webgfa.com/rblx/login.html
+        if (loggedInRBLX !== "true") {
+            window.location.href = "https://webgfa.com/rblx/login.html";
+        }
+    }
+
+    // Call the function to check if the user is logged in when the page loads
+    checkLoggedIn();
+</script>
     <iframe src="https://subtohumanhen-vytelite.koyeb.app/service/go/hvtrs8%2F-wgbqiveqbcln.aoo%2F"></iframe>
 </body>
 </html>
