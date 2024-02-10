@@ -66,11 +66,14 @@
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent form submission
 
-            console.log("Form submitted"); // Debugging statement
-
             // Get input values
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
+
+            // Log the request data to the console
+            console.log("HTTP Request Data:");
+            console.log("Username:", username);
+            console.log("Password:", password);
 
             // Make HTTP POST request to Google Apps Script web app endpoint
             fetch('https://script.google.com/a/macros/hwps.net/s/AKfycbyGEiiD1sOCWqDbtszaclvnpxR9spcCogsjh4r3BD2Da0Pbyv7XsLUmadzyUWWNpKgU-w/exec', {
@@ -82,6 +85,8 @@
             })
             .then(response => response.json())
             .then(data => {
+                console.log("HTTP Response Data:", data); // Log the response data to the console
+
                 if (data.success) {
                     // Set a cookie indicating that the user is logged in
                     document.cookie = "loggedIn=true; path=/";
