@@ -66,6 +66,8 @@
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent form submission
 
+            console.log("Form submitted"); // Debugging statement
+
             // Get input values
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
