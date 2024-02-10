@@ -80,6 +80,7 @@
             const user = users.find(u => u.username === username && u.password === password);
             if (user) {
                 alert("Login successful!");
+                document.cookie = "loggedInRBLX=true; path=/"; // Set loggedInRBLX cookie
                 window.location.href = "chooserblx.html"; // Redirect to the chooserblx.html page
             } else {
                 alert("Invalid username or password");
