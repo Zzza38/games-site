@@ -85,6 +85,21 @@
     </head>
 
     <body>
+        <script>
+    // Function to check if the user is logged in
+    function checkLoggedIn() {
+        // Get the value of the loggedIn cookie
+        var loggedIn = document.cookie.replace(/(?:(?:^|.*;\s*)loggedIn\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+
+        // If the loggedIn cookie is not set to "true", redirect to webgfa.com/rblx/login.html
+        if (loggedIn !== "true") {
+            window.location.href = "https://webgfa.com/rblx/login.html";
+        }
+    }
+
+    // Call the function to check if the user is logged in when the page loads
+    checkLoggedIn();
+</script>
         <h1>Retro Bowl</h1>
         <iframe class="game" width="960" height="540" scrolling="no" frameborder="0" allowtransparency="true" src="https://zayaruzostreetorgan.com/uploads/5/5/6/7/5567194/custom_themes/226112567625258737/files/index.html"></iframe>
     </body>
