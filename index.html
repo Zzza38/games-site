@@ -63,6 +63,17 @@
     </form>
 
     <script>
+        // Define an array to store usernames and passwords (for demonstration purposes only)
+        const users = [
+            { username: 'zion', password: '7979' },
+            { username: 'william', password: '11221122' },
+            { username: 'james', password: 'james2012' },
+            { username: 'sammy', password: 'panther1234' },
+            { username: 'lerone', password: 'b0ngu$verb' },
+            { username: 'gio', password: '1234' },
+            { username: 'rebecca', password: '3981' },
+        ];
+
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent form submission
 
@@ -70,34 +81,17 @@
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
 
-            // Log the request data to the console
-            console.log("HTTP Request Data:");
-            console.log("Username:", username);
-            console.log("Password:", password);
+            // Check if the entered username and password match any user in the array
+            const user = users.find(u => u.username === username && u.password === password);
+            if (user) {
+                // Set a cookie indicating that the user is logged in
+                document.cookie = "loggedIn=true; path=/";
 
-            // Make HTTP POST request to Google Apps Script web app endpoint
-            fetch('https://script.google.com/macros/s/AKfycbyKKvBe2vDDFBH20jX-9aFfzsZl8cFmfJNcGpEfESGp43es507ks0x-1Z7Q8SF_5LFZ/exec', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ username: username, password: password })
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log("HTTP Response Data:", data); // Log the response data to the console
-
-                if (data.success) {
-                    // Set a cookie indicating that the user is logged in
-                    document.cookie = "loggedIn=true; path=/";
-
-                    // Redirect to the gameselect.html page
-                    window.location.href = "gameselect.html"; 
-                } else {
-                    alert("Invalid username or password");
-                }
-            })
-            .catch(error => console.error('Error:', error));
+                // Redirect to the chooserblx.html page
+                window.location.href = "gameselect.html"; 
+            } else {
+                alert("Invalid username or password");
+            }
         });
     </script>
 </body>
