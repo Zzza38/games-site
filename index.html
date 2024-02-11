@@ -64,7 +64,7 @@
 
     <script>
         document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); // Prevent form submission
 
             // Get input values
             var username = document.getElementById("username").value;
@@ -76,18 +76,17 @@
             console.log("Password:", password);
 
             // Make HTTP POST request to Google Apps Script web app endpoint
-            fetch('https://script.google.com/a/macros/hwps.net/s/AKfycbyGEiiD1sOCWqDbtszaclvnpxR9spcCogsjh4r3BD2Da0Pbyv7XsLUmadzyUWWNpKgU-w/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbyKKvBe2vDDFBH20jX-9aFfzsZl8cFmfJNcGpEfESGp43es507ks0x-1Z7Q8SF_5LFZ/exec', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ username: username, password: password })
             })
-            .then(response => {
-                console.log("HTTP Response Data:", response); // Log the response data to the console
-                return response.json();
-            })
+            .then(response => response.json())
             .then(data => {
+                console.log("HTTP Response Data:", data); // Log the response data to the console
+
                 if (data.success) {
                     // Set a cookie indicating that the user is logged in
                     document.cookie = "loggedIn=true; path=/";
