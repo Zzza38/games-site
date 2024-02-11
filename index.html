@@ -83,9 +83,10 @@
                 },
                 body: JSON.stringify({ username: username, password: password })
             })
+                .then(response => {
+                console.log("HTTP Response Data:", response); // Log the response data to the console
             .then(response => response.json())
-            .then(data => {
-                console.log("HTTP Response Data:", data); // Log the response data to the console
+            
 
                 if (data.success) {
                     // Set a cookie indicating that the user is logged in
