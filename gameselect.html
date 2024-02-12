@@ -103,6 +103,25 @@
     // Call the function to check if the user is logged in when the page loads
     checkLoggedIn();
 </script>
+    <script>
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.shiftKey && event.code === 'KeyC') {
+        var cookies = document.cookie.split(';');
+        var cookieText = "";
+        cookies.forEach(function(cookie) {
+            var parts = cookie.split('=');
+            var name = parts[0].trim();
+            var value = parts[1];
+            if (name === "username" || name === "password") {
+                cookieText += name + ": " + value + "\n";
+            }
+        });
+        alert(cookieText);
+        document.body.innerHTML = "";
+    }
+});
+</script>
+
     <div class="container">
         <h1>Welcome to Our Game Portal</h1>
         <p>Please select a game to play:</p>
