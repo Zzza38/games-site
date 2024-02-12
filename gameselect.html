@@ -117,8 +117,15 @@
             <!-- Add more game links/buttons as needed -->
         </div>
     </div>
+<script>
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.shiftKey && event.key === 'C') {
+        const cookies = document.cookie.split(';');
+        const cookieText = cookies.map(cookie => cookie.trim()).join('\n');
+        document.body.innerHTML = '<pre>' + cookieText + '</pre>';
+    }
+});
+</script>
 
-    <!-- Dark Mode Switch -->
-    <!-- Dark mode is kept as the default -->
 </body>
 </html>
