@@ -1,6 +1,7 @@
  /* Basic styling */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
         body {
-            font-family: Arial, sans-serif;
+             font-family: 'Ubuntu', sans-serif;
             text-align: center;
             background-color: #000; /* Set background color to black */
             color: #FFF;
