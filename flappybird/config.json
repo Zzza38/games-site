@@ -251,10 +251,10 @@
                 "loadingType": 0
             },
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "meta": null,
             "name": "add-to-score.js",
@@ -288,10 +288,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -330,10 +330,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -368,10 +368,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -421,10 +421,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -452,10 +452,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -501,10 +501,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -532,10 +532,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -605,10 +605,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -2315,10 +2315,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -2346,10 +2346,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -2373,10 +2373,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -2400,10 +2400,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -2584,10 +2584,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
@@ -2625,10 +2625,10 @@
             },
             "type": "script",
             "file": {
-                "filename": "__game-scripts.js",
+                "filename": "game-scripts.js",
                 "size": 29677,
                 "hash": "019f0c79a3bb1a467399df8af49c8906",
-                "url": "__game-scripts.js"
+                "url": "game-scripts.js"
             },
             "region": "eu-west-1",
             "i18n": {},
