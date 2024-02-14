@@ -3,7 +3,7 @@
             { username: 'zion', password: '7979' },
             { username: 'william', password: '11221122' },
             { username: 'james', password: 'james2012' },
-            { username: 'sammy', password: 'panther1234' },
+            { username: 'sammy', password: 'jaguar1234' },
             { username: 'lerone', password: 'b0ngu$verb' },
             { username: 'gio', password: '1234' },
             { username: 'rebecca', password: '3981' },
