@@ -9,6 +9,7 @@
             { username: 'rebecca', password: '3981' },
             { username: 'nathaniel', password: 'big' },
             { username: 'rafael', password: 'rafaeln1' },
+        { username: 'owen', password: '1234' },
         ];
 
         document.getElementById("loginForm").addEventListener("submit", function(event) {
