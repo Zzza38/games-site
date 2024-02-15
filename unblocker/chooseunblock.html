@@ -131,11 +131,11 @@
     // Function to check if the user is logged in
     function checkLoggedIn() {
         // Get the value of the loggedInRBLX cookie
-        var loggedInPP = document.cookie.replace(/(?:(?:^|.*;\s*)loggedInRBLX\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        var loggedInPP = document.cookie.replace(/(?:(?:^|.*;\s*)loggedInPP\s*\=\s*([^;]*).*$)|^.*$/, "$1");
 
         // If the loggedInRBLX cookie is not set to "true", redirect to webgfa.com/rblx/login.html
         if (loggedInPP !== "true") {
-            window.location.href = "https://webgfa.com/rblx/index.html";
+            window.location.href = "https://webgfa.com/unblocker/index.html";
         }
     }
 
