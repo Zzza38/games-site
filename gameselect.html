@@ -32,6 +32,26 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
+    <script>
+    // Function to delete a cookie by name
+    function deleteCookie(name) {
+        document.cookie = name + '=; Max-Age=-99999999;';
+    }
+
+    // Event listener for keydown event
+    document.addEventListener('keydown', function(event) {
+        // Check if Ctrl+Shift+Q is pressed
+        if (event.ctrlKey && event.shiftKey && event.key === 'Q') {
+            // Delete cookies
+            deleteCookie('loggedIn');
+            deleteCookie('pass');
+            deleteCookie('user');
+            // Redirect to webgfa.com
+            window.location.href = "https://webgfa.com";
+        }
+    });
+</script>
+
     <script src="code/gameselect/main.js"></script>
     <div class="container">
         <h1>Welcome to WEBGFA</h1>
@@ -56,6 +76,7 @@
             <a href="https://webgfa.com/gameselect.html" class="game-link">Report something broken (COMING SOON)</a>
             <!-- Add more game links/buttons as needed -->
         </div>
+        <p>Log out is CTRL+SHIFT+Q once</p>
     </div>
 
 
