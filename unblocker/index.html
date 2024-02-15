@@ -104,7 +104,7 @@
             const user = users.find(u => u.username === username && u.password === password);
             if (user) {
                 alert("Login successful!");
-                document.cookie = "loggedInUnblock=true; path=/"; // Set loggedInRBLX cookie
+                document.cookie = "loggedInPP=true; path=/"; // Set loggedInRBLX cookie
                 window.location.href = "chooseunblock.html"; // Redirect to the chooserblx.html page
             } else {
                 alert("Invalid username or password");
