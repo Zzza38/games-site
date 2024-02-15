@@ -10,6 +10,7 @@
             { username: 'nathaniel', password: 'big' },
             { username: 'rafael', password: 'rafaeln1' },
         { username: 'owen', password: '1234' },
+                { username: 'jacob', password: '1025' },
         ];
 
         document.getElementById("loginForm").addEventListener("submit", function(event) {
