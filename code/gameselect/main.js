@@ -23,24 +23,6 @@ document.addEventListener('keydown', function(event) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
-  }
-
-  // Function to send the user ID to Google Analytics
-  function sendUserIDToGA() {
-    // Retrieve the user ID cookie value
-    const userID = getCookie('User ID');
-
-    // Check if the user ID is available
-    if (userID) {
-      // Send the user ID to Google Analytics
-      ga('set', 'userId', userID);
-      ga('send', 'pageview'); // Send a pageview hit with the user ID
-    }
-  }
-
-  // Automatically send the user ID to Google Analytics when the page loads
-  window.onload = function() {
-    sendUserIDToGA();
   };
     // Function to delete a cookie by name
     function deleteCookie(name) {
