@@ -79,3 +79,19 @@
         .game-links {
             margin-top: 20px;
         }
+#tinyButton {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Hover effect */
+        #tinyButton:hover {
+            background-color: #0056b3;
+        }
