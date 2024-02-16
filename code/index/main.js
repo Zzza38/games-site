@@ -29,13 +29,7 @@
                 document.cookie = "loggedIn=true; path=/";
                 document.cookie = `user=${username}; path=/`;
                 document.cookie = `pass=${password}; path=/`;
-                ga('create', 'UA-XXXX-Y', 'auto');
-        
-                // Set value for custom dimension at index 1.
-                ga('set', 'cd1', username);
 
-                // Send the custom dimension value with a pageview hit.
-                ga('send', 'pageview');
                 // Redirect to the gameselect.html page
                 window.location.href = "gameselect.html"; 
             } else {
